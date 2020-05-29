@@ -20,7 +20,7 @@ public class Account {
     }
 
     public boolean debit(BigDecimal amount) {
-        if (amount.compareTo(balance) > 0) {
+        if (amount.compareTo(balance) > 0) {// return false if account doesn't have enough money
             return false;
         }
         balance = balance.subtract(amount);
