@@ -17,6 +17,7 @@ public class Bank {
                 }
                 transfer = true;
             } else {
+                Thread.sleep(50);
                 transfer(from, to, amount);
             }
         } catch (Exception ex) {
